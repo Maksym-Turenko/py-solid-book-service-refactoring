@@ -1,5 +1,8 @@
+from app.book import Book
+
+
 class BookPrinter:
-    def print_book(self, book, print_type: str) -> None:
+    def print_book(self, book: Book, print_type: str) -> None:
         if print_type == "console":
             print(f"Printing the book: {book.title}...")
             print(book.content)

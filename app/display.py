@@ -1,5 +1,8 @@
+from app.book import Book
+
+
 class BookDisplay:
-    def display(self, book, display_type: str) -> None:
+    def display(self, book: Book, display_type: str) -> None:
         if display_type == "console":
             print(book.content)
         elif display_type == "reverse":
